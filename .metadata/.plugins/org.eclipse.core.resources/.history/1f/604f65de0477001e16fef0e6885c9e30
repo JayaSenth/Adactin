@@ -1,0 +1,25 @@
+package com.StepDefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+import com.Runner.RunnerClass;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Stepddefinitionclass {
+
+	public static WebDriver driver = RunnerClass.driver;
+
+	
+	
+
+
+
+
+	
+}

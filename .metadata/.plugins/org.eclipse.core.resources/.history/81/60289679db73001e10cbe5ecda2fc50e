@@ -1,0 +1,17 @@
+package Excel_Workbook;
+
+import java.io.File;
+
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class writedata {	
+ public  static void writedata() {
+
+	 File f = new File("C:\\Users\\HP\\Desktop\\Book1.xlsx");
+	 Workbook wb = new XSSFWorkbook();
+	 wb.getSheet("Oct IPT").getRow(0).createCell(1).setCellValue("Studentdetails");
+	 wb.getSheet("Oct IPT").createRow(1).createCell(0).setCellValue("SaiNivis");
+	 wb.getSheet("Oct IPT").getRow(1).createCell(1).setCellValue("Sainivis@123");
+
+}

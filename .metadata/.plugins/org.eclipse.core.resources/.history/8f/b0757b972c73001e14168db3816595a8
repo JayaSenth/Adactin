@@ -1,0 +1,11 @@
+package com.Methodoverriding;
+
+public class sample {
+	private void sysout() {
+		sysout();
+}
+	public static void main(String[] args) {
+	sample ss = new sample();
+	ss.sysout();
+	}
+}

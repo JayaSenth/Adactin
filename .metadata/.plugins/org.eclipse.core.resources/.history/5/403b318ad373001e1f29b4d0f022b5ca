@@ -1,0 +1,11 @@
+package SampleProject.MavenProject;
+
+import org.junit.Test;
+
+public class browserlaunch {
+  
+@Test
+	public void browserla() {
+	 System.out.println("It is a testng"); 
+  }
+}

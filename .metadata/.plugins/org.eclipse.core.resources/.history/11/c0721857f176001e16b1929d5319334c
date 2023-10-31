@@ -1,0 +1,12 @@
+package com.StepDefinition;
+
+import org.openqa.selenium.WebDriver;
+
+import com.Runner.RunnerClass;
+
+public class Stepddefinitionclass {
+
+	public static WebDriver driver = RunnerClass.driver;
+	
+	
+}

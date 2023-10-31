@@ -1,0 +1,45 @@
+package com.StepDefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+import com.Runner.RunnerClass;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Stepddefinitionclass {
+
+	public static WebDriver driver = RunnerClass.driver;
+
+	@Given("^user Launch the url in Adactin Application$")
+	public void user_Launch_the_url_in_Adactin_Application() throws Throwable {
+		driver.get("https://adactinhotelapp.com/index.php");
+	}
+
+	@When("^user Enter the username in the USername Field$")
+	public void user_Enter_the_username_in_the_USername_Field() throws Throwable {
+		WebElement username = driver.findElement(By.name("username"));
+		username.sendKeys("JayaSenthil");
+	}
+
+	@When("^user Enter the Password in the password field$")
+	public void user_Enter_the_Password_in_the_password_field() throws Throwable {
+		WebElement password = driver.findElement(By.id("password"));
+		password.sendKeys("436JR5");
+	}
+
+	@Then("^user click the login button$")
+	public void user_click_the_login_button() throws Throwable {
+		WebElement login = driver.findElement(By.id("login"));
+		login.click();
+		
+	}
+
+
+
+	
+}
